@@ -39,16 +39,7 @@ export default function AutoCarousel({ autos }) {
       </div>
 
       {/* Texto indicativo para móvil */}
-      <p
-        style={{
-          textAlign: "center",
-          color: "#888",
-          marginTop: "0.5rem",
-          fontSize: "0.9rem",
-          userSelect: "none",
-        }}
-        className="slide-hint"
-      >
+      <p className="slide-hint">
         Desliza para ver más ➡️
       </p>
     </>
