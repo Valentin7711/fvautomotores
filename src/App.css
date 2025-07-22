@@ -40,9 +40,9 @@ h1 {
   height: 100%;
   object-fit: cover;
   display: block;
-  filter: brightness(0.6); /* Oscurece un poco la imagen para mejor legibilidad */
-   animation: fadeInImage 1.5s ease-in forwards;
-  opacity: 0; /* Inicialmente invisible */
+  filter: brightness(0.6);
+  animation: fadeInImage 1.5s ease-in forwards;
+  opacity: 0;
 }
 
 @keyframes fadeInImage {
@@ -51,7 +51,7 @@ h1 {
   }
 }
 
-/* Overlay con el texto y el botón */
+/* Overlay con texto */
 .hero-overlay {
   position: absolute;
   top: 0;
@@ -66,16 +66,23 @@ h1 {
   padding: 2rem;
   box-sizing: border-box;
   text-align: center;
+  animation: fadeUp 1.2s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
 }
 
-/* Estilos de la sección de bienvenida */
 .seccion-inicio {
   color: white;
   font-size: 1.5rem;
   margin-bottom: 1.5rem;
   z-index: 11;
   max-width: 600px;
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+  animation: fadeUp 1.2s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
 }
 
 .seccion-inicio h2 {
@@ -97,6 +104,10 @@ h1 {
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
   transition: background-color 0.3s ease;
+  animation: fadeUp 1.2s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
 }
 
 .hero-btn:hover {
@@ -104,117 +115,18 @@ h1 {
 }
 
 /* ==== ANIMACIONES ==== */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.fade-in {
-  opacity: 0;
-  animation: fadeInTitle 1.2s ease-out forwards;
-  animation-delay: 0.4s;
-}
-
-@keyframes fadeInTitle {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* ==== RESPONSIVE ==== */
-@media (max-width: 768px) {
-  .catalogo-title {
-    font-size: 1.8rem;
-    margin-top: 2rem;
-  }
-
-  .hero-btn {
-    font-size: 1rem;
-    padding: 0.8rem 1.5rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .app {
-    margin: 1rem;
-    padding: 0 0.5rem;
-  }
-
-  h1 {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  .filtro {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .filtro select {
-    min-width: 100%;
-  }
-
-  .auto-card img {
-    height: 140px;
-  }
-
-  .auto-card h2 {
-    font-size: 1.1rem;
-  }
-
-  .auto-card button {
-    font-size: 0.95rem;
-  }
-}
-
-
-/* Animación de entrada suave */
 @keyframes fadeUp {
   from {
     opacity: 0;
     transform: translateY(20px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
-.hero-overlay {
-  animation: fadeUp 1.2s ease-out forwards;
-  opacity: 0;
-  animation-delay: 0.4s;
-  animation-fill-mode: forwards;
-}
-
-/* Opcional: aplicar por separado a los elementos internos */
-.seccion-inicio {
-  animation: fadeUp 1.2s ease-out forwards;
-  opacity: 0;
-  animation-delay: 0.5s;
-  animation-fill-mode: forwards;
-}
-
-.hero-btn {
-  animation: fadeUp 1.2s ease-out forwards;
-  opacity: 0;
-  animation-delay: 0.8s;
-  animation-fill-mode: forwards;
-}
- 
-/*section de img auto entregando llave*/
+/* ==== INFO USADO ==== */
 .info-usado {
   display: flex;
   align-items: center;
@@ -224,7 +136,7 @@ h1 {
   border-radius: 12px;
   margin: 3rem auto;
   max-width: 1000px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   gap: 2rem;
   flex-wrap: wrap;
 }
@@ -272,7 +184,7 @@ h1 {
   object-fit: cover;
 }
 
-/* === RESPONSIVE === */
+/* ==== RESPONSIVE ==== */
 @media (max-width: 768px) {
   .catalogo-title {
     font-size: 1.8rem;
@@ -304,5 +216,38 @@ h1 {
 
   .seccion-inicio p {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    margin: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .filtro {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filtro select {
+    min-width: 100%;
+  }
+
+  .auto-card img {
+    height: 140px;
+  }
+
+  .auto-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .auto-card button {
+    font-size: 0.95rem;
   }
 }

@@ -1,13 +1,12 @@
 /* ==== LISTA Y TARJETAS DE AUTOS ==== */
 .autos-lista {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas en desktop */
   gap: 1.5rem;
   justify-content: center;
   max-width: 1000px;
   margin: 0 auto;
 }
-
 
 .auto-card {
   background-color: white;
@@ -18,6 +17,7 @@
   flex-direction: column;
   align-items: center;
   transition: transform 0.2s ease;
+  width: 100%;
 }
 
 .auto-card:hover {
@@ -59,7 +59,7 @@
 }
 
 .auto-card button:hover:not(:disabled) {
-  background-color:#002853;
+  background-color: #002853;
 }
 
 .auto-card button:disabled {
@@ -67,33 +67,18 @@
   cursor: not-allowed;
 }
 
-@media (max-width: 768px) {
-  .autos-lista {
-    grid-template-columns: 1fr; /* Solo una columna en móviles */
-    padding: 0 1rem;
-  }
-
-  .auto-card {
-    width: 100%;
-  }
-
-  .auto-card img {
-    height: 180px;
-  }
-}
-
+/* ==== RESPONSIVE MOBILE ==== */
 @media (max-width: 768px) {
   .autos-lista {
     grid-template-columns: 1fr; /* 1 tarjeta por fila */
     padding: 1rem;
-    gap: 2rem; /* más espacio entre tarjetas */
+    gap: 2rem;
     max-width: 100%;
   }
 
   .auto-card {
-    width: 100%;
     max-width: 400px;
-    margin: 0 auto; /* centrado horizontal */
+    margin: 0 auto;
   }
 
   .auto-card img {

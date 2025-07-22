@@ -48,9 +48,8 @@
 }
 
 .carousel .auto-card {
-  min-width: 350px;
-  max-width: 350px;
-  flex-shrink: 0;
+  width: 300px;
+  flex: 0 0 auto;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInCard 0.6s ease-out forwards;
@@ -96,13 +95,13 @@
   right: 5px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .scroll-btn {
-    display: none; /* Scroll táctil en móviles */
+    display: none;
   }
 
   .carousel .auto-card {
-    min-width: 90%;
-    max-width: 90%;
+    width: 85%;
+    margin: 0 auto;
   }
 }

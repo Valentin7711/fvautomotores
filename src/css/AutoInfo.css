@@ -62,7 +62,7 @@
   height: 20px;
 }
 
-/* Responsive */
+/* Responsive para tablets y móviles grandes */
 @media (max-width: 768px) {
   .detalle-info {
     padding: 3rem;
@@ -81,6 +81,7 @@
   }
 }
 
+/* Responsive para móviles pequeños */
 @media (max-width: 480px) {
   .detalle-info {
     padding: 1.5rem;

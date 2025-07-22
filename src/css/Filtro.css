@@ -1,10 +1,12 @@
 .filtro-wrapper {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .filtro {
-  background-color:rgb(231, 231, 230);
+  background-color: rgb(231, 231, 230);
   padding: 1rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -15,6 +17,7 @@
   width: 100%;
   max-width: 100%;
   margin-bottom: 2rem;
+  box-sizing: border-box;
 }
 
 .filtro h3 {
@@ -27,8 +30,8 @@
 
 .filtro label {
   display: block;
-  margin-bottom: 1rem;
   font-size: 0.95rem;
+  width: 100%;
 }
 
 .filtro select {
@@ -40,9 +43,8 @@
   cursor: pointer;
   transition: border-color 0.2s;
   padding: 0.5rem 1rem;
-  font-size: 1rem;
   border: 1px solid #b8b8b8;
-  min-width: 140px;
+  min-width: 160px;
 }
 
 .filtro select:hover {
@@ -52,22 +54,61 @@
 .limpiar-btn {
   background-color: #ddd;
   border: none;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 0.95rem;
+  transition: background-color 0.2s;
+}
+
+.limpiar-btn:hover {
+  background-color: #ccc;
 }
 
 .toggle-filtros {
   display: none;
 }
 
-@media (max-width: 600px) {
+/* FULL RESPONSIVE para pantallas pequeñas */
+@media (max-width: 768px) {
+  .filtro {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 1rem;
+  }
+
+  .filtro label,
+  .filtro select {
+    width: 100%;
+  }
+
+  .filtro h3 {
+    font-size: 1.1rem;
+  }
+
+  .limpiar-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
   .toggle-filtros {
     display: block;
     margin-bottom: 1rem;
+    background-color: #003d7d;
+    color: white;
+    padding: 0.6rem 1rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
   }
 
   .filtro-wrapper.abierto .filtro {
-    display: block;
+    display: flex;
+  }
+
+  .filtro select {
+    min-width: 100%;
   }
 }
