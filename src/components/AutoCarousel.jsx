@@ -12,7 +12,7 @@ export default function AutoCarousel({ autos }) {
 
   return (
     <div className="carousel-wrapper">
-      <button className="scroll-btn left" onClick={scrollLeft}>❮</button>
+      <button className="scroll-btn left" onClick={scrollLeft} aria-label="Desplazar hacia la izquierda">❮</button>
 
       <div className="carousel-container" ref={scrollRef}>
         <div className="carousel">
@@ -22,7 +22,7 @@ export default function AutoCarousel({ autos }) {
         </div>
       </div>
 
-      <button className="scroll-btn right" onClick={scrollRight}>❯</button>
+      <button className="scroll-btn right" onClick={scrollRight} aria-label="Desplazar hacia la derecha">❯</button>
     </div>
   );
 }
