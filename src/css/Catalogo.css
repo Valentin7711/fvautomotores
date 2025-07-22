@@ -1,25 +1,14 @@
-.catalogo,
-.contacto {
+.catalogo {
   max-width: 1000px;
   margin: 6rem auto 3rem;
   padding: 3rem;
   background-color: rgb(255, 255, 255);
   border-radius: 15px;
   box-shadow: 0 7px 15px rgba(0,0,0,0.1);
-  
 }
 
-.catalogo h1,
-.contacto h1 {
+.catalogo h1 {
   text-align: center;
   margin-bottom: 2rem;
   color: rgb(151, 0, 0);
-}
-
-.contacto ul {
-  list-style: none;
-  padding-left: 0;
-  font-size: 1.1rem;
-  line-height: 2;
-  background-color: rgb(240, 240, 229);
 }

@@ -1,0 +1,62 @@
+.contacto {
+  max-width: 1000px;
+  margin: 6rem auto 3rem;
+  padding: 3rem;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 7px 15px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+.contacto h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #970000;
+}
+
+.contacto p {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.2rem;
+}
+
+.contacto-lista {
+  list-style: none;
+  background-color: #f0f0e5;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  box-shadow: inset 0 0 5px rgba(0,0,0,0.05);
+}
+
+.contacto-lista li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.contacto-lista li a {
+  color: #970000;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contacto-lista li a:hover,
+.contacto-lista li a:focus {
+  color: #cc0000;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .contacto {
+    margin: 3rem 1rem 2rem;
+    padding: 2rem 1rem;
+  }
+
+  .contacto p,
+  .contacto-lista li {
+    font-size: 1rem;
+  }
+}
