@@ -40,7 +40,7 @@ export default function AutoCarousel({ autos }) {
 
       {/* Texto indicativo para móvil */}
       <p className="slide-hint">
-        Desliza para ver más ➡️
+        Desliza para ver más
       </p>
     </>
   );
