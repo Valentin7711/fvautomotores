@@ -11,18 +11,46 @@ export default function AutoCarousel({ autos }) {
     scrollRef.current?.scrollBy({ left: 300, behavior: "smooth" });
 
   return (
-    <div className="carousel-wrapper">
-      <button className="scroll-btn left" onClick={scrollLeft} aria-label="Desplazar hacia la izquierda">❮</button>
+    <>
+      <div className="carousel-wrapper">
+        <button
+          className="scroll-btn left"
+          onClick={scrollLeft}
+          aria-label="Desplazar hacia la izquierda"
+        >
+          ❮
+        </button>
 
-      <div className="carousel-container" ref={scrollRef}>
-        <div className="carousel">
-          {autos.map(auto => (
-            <Auto key={auto.id} auto={auto} />
-          ))}
+        <div className="carousel-container" ref={scrollRef}>
+          <div className="carousel">
+            {autos.map((auto) => (
+              <Auto key={auto.id} auto={auto} />
+            ))}
+          </div>
         </div>
+
+        <button
+          className="scroll-btn right"
+          onClick={scrollRight}
+          aria-label="Desplazar hacia la derecha"
+        >
+          ❯
+        </button>
       </div>
 
-      <button className="scroll-btn right" onClick={scrollRight} aria-label="Desplazar hacia la derecha">❯</button>
-    </div>
+      {/* Texto indicativo para móvil */}
+      <p
+        style={{
+          textAlign: "center",
+          color: "#888",
+          marginTop: "0.5rem",
+          fontSize: "0.9rem",
+          userSelect: "none",
+        }}
+        className="slide-hint"
+      >
+        Desliza para ver más ➡️
+      </p>
+    </>
   );
 }
