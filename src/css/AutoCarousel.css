@@ -1,0 +1,72 @@
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-container {
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 1rem 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Oculta el scroll bar para estética */
+.carousel-container::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel {
+  display: flex;
+  gap: 2.5rem;
+  width: max-content;
+  box-sizing: border-box;
+}
+
+.carousel .auto-card {
+  min-width: 350px; /* antes 280px */
+  max-width: 350px;
+  flex-shrink: 0;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(151, 0, 0, 0.85);
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 2;
+  transition: background-color 0.3s;
+}
+
+.scroll-btn:hover {
+  background-color: rgb(151, 0, 0);
+}
+
+.scroll-btn.left {
+  left: 5px;
+}
+
+.scroll-btn.right {
+  right: 5px;
+}
+
+@media (max-width: 600px) {
+  .scroll-btn {
+    display: none; /* Scroll táctil en móviles */
+  }
+
+  .carousel .auto-card {
+        min-width: 90%;
+        max-width: 90%;
+  }
+}

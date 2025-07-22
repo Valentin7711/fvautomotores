@@ -1,0 +1,308 @@
+/* ==== RESET & GLOBAL ==== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+.app {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* ==== TÍTULOS ==== */
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #222;
+  font-size: 2rem;
+}
+
+.catalogo-title {
+  text-align: center;
+  margin: 3rem auto 2rem;
+  font-size: 2.5rem;
+  color: #222;
+}
+
+/* ==== HERO BANNER ==== */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  filter: brightness(0.6); /* Oscurece un poco la imagen para mejor legibilidad */
+   animation: fadeInImage 1.5s ease-in forwards;
+  opacity: 0; /* Inicialmente invisible */
+}
+
+@keyframes fadeInImage {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Overlay con el texto y el botón */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  padding: 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Estilos de la sección de bienvenida */
+.seccion-inicio {
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  z-index: 11;
+  max-width: 600px;
+  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+}
+
+.seccion-inicio h2 {
+  margin: 0 0 0.5rem;
+  font-size: 2.5rem;
+}
+
+.seccion-inicio p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.hero-btn {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #003d7d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #002853;
+}
+
+/* ==== ANIMACIONES ==== */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeInTitle 1.2s ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  .catalogo-title {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+  }
+
+  .hero-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .app {
+    margin: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .filtro {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filtro select {
+    min-width: 100%;
+  }
+
+  .auto-card img {
+    height: 140px;
+  }
+
+  .auto-card h2 {
+    font-size: 1.1rem;
+  }
+
+  .auto-card button {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* Animación de entrada suave */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-overlay {
+  animation: fadeUp 1.2s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.4s;
+  animation-fill-mode: forwards;
+}
+
+/* Opcional: aplicar por separado a los elementos internos */
+.seccion-inicio {
+  animation: fadeUp 1.2s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+.hero-btn {
+  animation: fadeUp 1.2s ease-out forwards;
+  opacity: 0;
+  animation-delay: 0.8s;
+  animation-fill-mode: forwards;
+}
+ 
+/*section de img auto entregando llave*/
+.info-usado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 3rem 2rem;
+  border-radius: 12px;
+  margin: 3rem auto;
+  max-width: 1000px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.info-contenido {
+  flex: 1;
+  min-width: 280px;
+}
+
+.info-contenido h2 {
+  margin-bottom: 1rem;
+  color: #111;
+  font-size: 1.8rem;
+}
+
+.info-contenido p {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.info-contenido ul {
+  padding-left: 1.2rem;
+  list-style: none;
+}
+
+.info-contenido li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+  position: relative;
+}
+
+.info-contenido li::before {
+  content: "✔️";
+  margin-right: 0.5rem;
+  color: green;
+}
+
+.info-img {
+  flex: 1;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .catalogo-title {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+  }
+
+  .hero-btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .info-usado {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .info-contenido {
+    text-align: center;
+  }
+
+  .info-img {
+    max-width: 90%;
+  }
+
+  .seccion-inicio h2 {
+    font-size: 2rem;
+  }
+
+  .seccion-inicio p {
+    font-size: 1rem;
+  }
+}

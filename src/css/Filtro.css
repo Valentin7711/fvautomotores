@@ -1,0 +1,73 @@
+.filtro-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.filtro {
+  background-color:rgb(231, 231, 230);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 2rem;
+}
+
+.filtro h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.filtro label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.filtro select {
+  width: 100%;
+  margin-top: 0.25rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.2s;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #b8b8b8;
+  min-width: 140px;
+}
+
+.filtro select:hover {
+  border-color: #007bff;
+}
+
+.limpiar-btn {
+  background-color: #ddd;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.toggle-filtros {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .toggle-filtros {
+    display: block;
+    margin-bottom: 1rem;
+  }
+
+  .filtro-wrapper.abierto .filtro {
+    display: block;
+  }
+}
