@@ -16,17 +16,6 @@ function Filtro({ filtros, setFiltros, marcas, años }) {
 
   return (
     <div className={`filtro-wrapper ${abierto ? "abierto" : ""}`}>
-      {/* Solo móvil */}
-<button
-  className="toggle-filtros"
-  onClick={() => setAbierto(!abierto)}
-  aria-label={abierto ? "Ocultar filtros" : "Mostrar filtros"}
-  title={abierto ? "Ocultar filtros" : "Mostrar filtros"}
->
-  {abierto ? "▲" : "▼"}
-</button>
-
-
       {/* Visible en desktop y cuando abierto en móvil */}
       <aside className="filtro">
         <h3>Filtrar</h3>

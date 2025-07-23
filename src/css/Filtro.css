@@ -65,10 +65,6 @@
   background-color: #ccc;
 }
 
-.toggle-filtros {
-  display: none;
-}
-
 /* FULL RESPONSIVE para pantallas pequeñas */
 @media (max-width: 768px) {
   .filtro {
@@ -92,32 +88,6 @@
 }
 
 @media (max-width: 480px) {
-  .toggle-filtros {
-    display: block;
-    margin-bottom: 1rem;
-    background-color: #003d7d;
-    color: white;
-    padding: 0.6rem 0;
-    border: none;
-    border-radius: 6px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    width: 48px;
-    height: 48px;
-    text-align: center;
-    line-height: 1;
-    user-select: none;
-    transition: background-color 0.3s ease;
-  }
-
-  .toggle-filtros:hover {
-    background-color: #002853;
-  }
-
-  .filtro-wrapper.abierto .filtro {
-    display: flex;
-  }
-
   .filtro select {
     min-width: 100%;
   }
