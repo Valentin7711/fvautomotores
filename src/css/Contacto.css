@@ -8,6 +8,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #333;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .contacto h1 {
@@ -54,6 +55,7 @@
   justify-content: center;
   gap: 1rem;
   flex-wrap: wrap;
+  box-sizing: border-box;
 }
 
 .contacto-btn {
@@ -67,6 +69,10 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+  white-space: nowrap;
 }
 
 .contacto-btn:hover {
@@ -114,6 +120,7 @@
   max-width: 1000px;
   border-radius: 10px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  box-sizing: border-box;
 }
 
 /* Responsive */
@@ -130,11 +137,15 @@
 
   .contacto-botones {
     flex-direction: column;
+    align-items: center;
   }
 
   .contacto-btn {
     width: 100%;
+    max-width: 100%;
     justify-content: center;
+    white-space: normal;
+    padding: 0.8rem 1rem;
   }
 
   .contacto-img img {
