@@ -254,7 +254,7 @@ h1 {
 
 @media (max-width: 768px) {
   .hero-banner {
-    height: 90vh; /* Reduce altura en pantallas chicas */
+    height: 70vh; /* Reduce altura en pantallas chicas */
   }
 
   .hero-img {
