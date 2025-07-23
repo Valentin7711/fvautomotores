@@ -1,4 +1,4 @@
-/* ==== HEADER GENERAL ==== */
+/* HEADER GENERAL */
 .header {
   position: fixed;
   top: 0;
@@ -21,7 +21,6 @@
   backdrop-filter: blur(6px);
 }
 
-/* ==== LOGO ==== */
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
@@ -29,7 +28,6 @@
   text-decoration: none;
 }
 
-/* ==== NAVBAR DESKTOP ==== */
 .navbar {
   display: flex;
   gap: 3rem;
@@ -49,7 +47,6 @@
   color: rgb(151, 0, 0);
 }
 
-/* ==== BOTÓN HAMBURGUESA ==== */
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -74,7 +71,6 @@
   box-shadow: 0 0 2px rgb(151, 0, 0);
 }
 
-/* Animación al abrir */
 .menu-toggle.open .bar:nth-child(1) {
   transform: rotate(45deg);
 }
@@ -86,7 +82,6 @@
   transform: rotate(-45deg);
 }
 
-/* ==== RESPONSIVE ==== */
 @media (max-width: 768px) {
   .header {
     padding: 1rem 1.5rem;
@@ -98,7 +93,7 @@
 
   .navbar {
     position: fixed;
-    top: 64px; /* altura estimada del header */
+    top: 64px; 
     right: 0;
     height: calc(100vh - 64px);
     width: 220px;

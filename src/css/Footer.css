@@ -32,7 +32,6 @@
   margin: 0 auto;
 }
 
-/* Desktop layout */
 @media (min-width: 768px) {
   .footer-content {
     flex-direction: row;
@@ -54,7 +53,6 @@
   user-select: none;
 }
 
-/* Enlaces con animación underline */
 .footer-links a {
   position: relative;
   color: var(--color-link);
@@ -89,7 +87,6 @@
   width: 100%;
 }
 
-/* Redes sociales con neumorfismo */
 .footer-social a {
   color: var(--color-text);
   font-size: 2rem;
@@ -119,7 +116,6 @@
   outline: none;
 }
 
-/* Colores específicos */
 .social-whatsapp:hover,
 .social-whatsapp:focus-visible {
   color: var(--color-whatsapp);
@@ -138,7 +134,6 @@
   background: #24121a;
 }
 
-/* Copyleft */
 .footer-copy {
   margin-top: 2.5rem;
   font-size: 1rem;
@@ -147,14 +142,12 @@
   font-weight: 500;
 }
 
-/* Accesibilidad: focus */
 .footer-links a:focus-visible,
 .footer-social a:focus-visible {
   outline: 2px solid var(--color-link-hover);
   outline-offset: 3px;
 }
 
-/* Responsive */
 @media (max-width: 480px) {
   .footer-corte {
     padding: 2rem 1rem;

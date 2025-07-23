@@ -83,7 +83,6 @@
   font-size: 1.1rem;
 }
 
-/* Redes sociales */
 .redes {
   margin-top: 2rem;
   font-size: 1.1rem;
@@ -110,7 +109,6 @@
   font-size: 1.5rem;
 }
 
-/* Imagen decorativa */
 .contacto-img {
   margin-top: 2.5rem;
 }
@@ -123,7 +121,6 @@
   box-sizing: border-box;
 }
 
-/* Responsive */
 @media (max-width: 600px) {
   .contacto {
     margin: 3rem 1rem;

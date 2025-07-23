@@ -1,7 +1,7 @@
-/* ==== LISTA Y TARJETAS DE AUTOS ==== */
+/*LISTA Y TARJETAS DE AUTOS*/
 .autos-lista {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas en desktop */
+  grid-template-columns: repeat(3, 1fr); 
   gap: 1.5rem;
   justify-content: center;
   max-width: 1000px;
@@ -67,10 +67,10 @@
   cursor: not-allowed;
 }
 
-/* ==== RESPONSIVE MOBILE ==== */
+/* RESPONSIVE MOBILE */
 @media (max-width: 768px) {
   .autos-lista {
-    grid-template-columns: 1fr; /* 1 tarjeta por fila */
+    grid-template-columns: 1fr;
     padding: 1rem;
     gap: 2rem;
     max-width: 100%;

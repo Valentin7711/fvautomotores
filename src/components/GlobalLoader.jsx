@@ -8,11 +8,11 @@ export default function GlobalLoader({ children }) {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    // Cuando cambia la ruta, activamos el loader
+
     setLoading(true);
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 500); // cambio de duración si querés
+    }, 500); 
 
     return () => clearTimeout(timer);
   }, [location.pathname]);

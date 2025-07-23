@@ -10,13 +10,13 @@ function Filtro({ filtros, setFiltros, marcas, años }) {
   };
 
   const limpiar = (e) => {
-    e.preventDefault(); // evitar submit o recarga
+    e.preventDefault();
     setFiltros({ marca: "", año: "", precio: "" });
   };
 
   return (
     <div className={`filtro-wrapper ${abierto ? "abierto" : ""}`}>
-      {/* Visible en desktop y cuando abierto en móvil */}
+
       <aside className="filtro">
         <h3>Filtrar</h3>
 

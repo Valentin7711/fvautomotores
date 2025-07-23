@@ -30,7 +30,6 @@ function AutoDetalle() {
   return (
     <>
       <div className="auto-detalle-contenido">
-        {/* Galería */}
         <div className="galeria-auto">
           <div className="imagen-principal" onClick={abrirModal}>
             <img src={auto.imagen[imagenDestacada]} alt="Imagen principal" />
@@ -49,11 +48,9 @@ function AutoDetalle() {
           </div>
         </div>
 
-        {/* Información */}
         <AutoInfo auto={auto} />
       </div>
 
-      {/* Modal */}
       {modalAbierto && (
         <div className="modal" onClick={cerrarModal}>
           <span className="cerrar" onClick={cerrarModal}>&times;</span>

@@ -9,7 +9,6 @@ function Home() {
 
   return (
     <>
-      {/* Banner principal */}
       <div className="hero-banner">
         <img src="/bmw.jpg" alt="Auto principal" className="hero-img" />
         <div className="hero-overlay">
@@ -29,7 +28,6 @@ function Home() {
         </div>
       </div>
 
-      {/* 🔽 NUEVA SECCIÓN USADO 🔽 */}
       <section className="info-usado fade-in">
         <div className="info-contenido">
           <h2>¿Querés entregar tu auto usado?</h2>
@@ -43,7 +41,6 @@ function Home() {
         <img src="/auto.jpg" alt="Recibimos tu auto usado" className="info-img" />
       </section>
 
-      {/* Título y carrusel */}
       <h1 className="catalogo-title fade-in">Algunos modelos destacados</h1>
       <div id="catalogo" className="pagina-inicio contenedor">
         <AutoCarousel autos={autos.slice(0, 8)} />

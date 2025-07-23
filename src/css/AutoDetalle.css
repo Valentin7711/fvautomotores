@@ -1,6 +1,6 @@
 .auto-detalle-contenido {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* 2 columnas en desktop */
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
   padding: 2rem;
   max-width: 1500px;
@@ -13,7 +13,6 @@
   min-width: 0;
 }
 
-/* Galería */
 .galeria-auto {
   display: flex;
   flex-direction: column;
@@ -52,7 +51,7 @@
   border-color: rgb(151, 0, 0);
 }
 
-/* Información del auto */
+
 .detalle-info {
   display: flex;
   flex-direction: column;
@@ -79,7 +78,7 @@
   padding: 0.3rem 0;
 }
 
-/* WhatsApp link */
+
 .detalle-info a {
   text-decoration: none;
   width: fit-content;
@@ -102,7 +101,6 @@
   background-color: #1ebe5d;
 }
 
-/* Modal */
 .modal {
   position: fixed;
   top: 0;
@@ -161,7 +159,7 @@
   transform: translateY(-50%);
 }
 
-/* ==== RESPONSIVE MOBILE ==== */
+
 @media (max-width: 768px) {
   .auto-detalle-contenido {
     grid-template-columns: 1fr; 
