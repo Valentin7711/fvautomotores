@@ -1,7 +1,7 @@
-import "../css/AutoInfo.css"
+import "../css/AutoInfo.css";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function AutoInfo({ auto }) {
-
   return (
     <div className="detalle-info">
       <h2>{auto.marca} {auto.modelo}</h2>
@@ -14,9 +14,11 @@ function AutoInfo({ auto }) {
         target="_blank"
         rel="noopener noreferrer"
       >
-     <button>Contactar por WhatsApp</button>
-     </a>
-
+        <button>
+          <i className="fab fa-whatsapp" aria-hidden="true"></i>
+          Contactar por WhatsApp
+        </button>
+      </a>
     </div>
   );
 }
