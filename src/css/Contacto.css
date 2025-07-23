@@ -38,11 +38,14 @@
 }
 
 .contacto-lista a {
+  color: #970000;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .contacto-lista a:hover {
   text-decoration: underline;
+  color: #c10000;
 }
 
 .contacto-botones {
@@ -61,29 +64,44 @@
   font-weight: bold;
   text-decoration: none;
   transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .contacto-btn:hover {
   background-color: #c10000;
 }
 
-/* Redes */
+.contacto-btn i {
+  font-size: 1.1rem;
+}
+
+/* Redes sociales */
 .redes {
   margin-top: 2rem;
   font-size: 1.1rem;
 }
 
 .red-social {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   margin-top: 0.5rem;
   color: #003d7d;
   font-weight: bold;
   text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
 }
 
 .red-social:hover {
   text-decoration: underline;
   color: #001e3c;
+}
+
+.red-social i {
+  font-size: 1.5rem;
 }
 
 /* Imagen decorativa */
@@ -116,6 +134,7 @@
 
   .contacto-btn {
     width: 100%;
+    justify-content: center;
   }
 
   .contacto-img img {

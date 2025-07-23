@@ -1,4 +1,6 @@
 import "../css/Contacto.css";
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function Contacto() {
   const contactos = [
@@ -17,38 +19,41 @@ function Contacto() {
   return (
     <div className="contacto" role="region" aria-labelledby="contacto-title">
       <h1 id="contacto-title">Contacto</h1>
-      <p>¿Interesado en un auto? ¡Comunicate con nosotros!</p>
+      <p>¿Interesado en un auto? Contactanos por los siguientes medios:</p>
 
       {contactos.map(({ nombre, telefono, email }) => (
         <div key={nombre} className="contacto-card">
           <ul className="contacto-lista">
             <li><strong>{nombre}</strong></li>
-            <li>📞 <a href={`tel:+54${telefono}`}>{telefono}</a></li>
-            <li>📧 <a href={`mailto:${email}`}>{email}</a></li>
-            <li className="contacto-botones">
-              <a href={`tel:+54${telefono}`} className="contacto-btn">Llamar</a>
-              <a href={`mailto:${email}`} className="contacto-btn">Enviar Email</a>
-            </li>
+            <li>📞 Teléfono: <a href={`tel:+54${telefono}`}>{telefono}</a></li>
+            <li>📧 Email: <a href={`mailto:${email}`}>{email}</a></li>
           </ul>
+          <div className="contacto-botones">
+            <a href={`tel:+54${telefono}`} className="contacto-btn" aria-label={`Llamar a ${nombre}`}>
+              <i className="fas fa-phone" aria-hidden="true"></i> Llamar
+            </a>
+            <a href={`mailto:${email}`} className="contacto-btn" aria-label={`Enviar mail a ${nombre}`}>
+              <i className="fas fa-envelope" aria-hidden="true"></i> Enviar Email
+            </a>
+          </div>
         </div>
       ))}
 
-      {/* Redes Sociales */}
       <div className="redes">
-        <p>📱 Seguinos en redes:</p>
-        <a
-          href="https://www.instagram.com/fvautosymotos"
-          target="_blank"
+        <p>📱 Seguinos en nuestras redes sociales:</p>
+        <a 
+          href="https://www.instagram.com/fvautosymotos" 
+          target="_blank" 
           rel="noopener noreferrer"
           className="red-social"
+          aria-label="Instagram de FV Autos y Motos"
         >
-          Instagram @fvautosymotos
+          <i className="fab fa-instagram" aria-hidden="true"></i> fvautosymotos
         </a>
       </div>
 
-      {/* Imagen decorativa */}
       <div className="contacto-img">
-        <img src="bmw.jpg" alt="Taller" />
+        <img src="/bmw.jpg" alt="Auto BMW" />
       </div>
     </div>
   );
