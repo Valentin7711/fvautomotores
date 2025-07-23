@@ -53,10 +53,9 @@ function Filtro({ filtros, setFiltros, marcas, años }) {
             <option value="mayor">Mayor a $20.000.000</option>
           </select>
         </div>
-
-        <button className="limpiar-btn" onClick={limpiar}>
-          Limpiar filtros
-        </button>
+       <button className="limpiar-btn" onClick={limpiar} aria-label="Limpiar filtros">
+      🧹 Limpiar filtros
+      </button>
       </aside>
     </div>
   );
