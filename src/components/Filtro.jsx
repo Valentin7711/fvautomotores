@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../css/Filtro.css";
 
 function Filtro({ filtros, setFiltros, marcas, años }) {
-  const [abierto, setAbierto] = useState(false); // Solo afecta móvil
+  const [abierto, ] = useState(false); 
 
   const handleChange = (e) => {
     const { name, value } = e.target;
