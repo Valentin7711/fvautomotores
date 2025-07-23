@@ -15,6 +15,9 @@ function Footer() {
         />
 
         <nav className="footer-links" aria-label="Enlaces principales">
+           <Link to="/" tabIndex={0}>
+            Inicio
+          </Link>
           <Link to="/catalogo" tabIndex={0}>
             Catálogo
           </Link>

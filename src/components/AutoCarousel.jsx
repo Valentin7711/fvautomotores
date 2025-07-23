@@ -37,11 +37,6 @@ export default function AutoCarousel({ autos }) {
           ❯
         </button>
       </div>
-
-      {/* Texto indicativo para móvil */}
-      <p className="slide-hint">
-        Desliza para ver más
-      </p>
     </>
   );
 }
