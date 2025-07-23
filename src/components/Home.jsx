@@ -11,7 +11,7 @@ function Home() {
     <>
       {/* Banner principal */}
       <div className="hero-banner">
-        <img src="/imgInicio.jpg" alt="Auto principal" className="hero-img" />
+        <img src="/bmw.jpg" alt="Auto principal" className="hero-img" />
         <div className="hero-overlay">
           <section className="seccion-inicio">
             <h2>Bienvenido a FV Automotores</h2>

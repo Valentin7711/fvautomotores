@@ -53,7 +53,7 @@ function Contacto() {
       </div>
 
       <div className="contacto-img">
-        <img src="/bmw.jpg" alt="Auto BMW" />
+        <img src="/imgInicio.jpg" alt="Auto BMW" />
       </div>
     </div>
   );
