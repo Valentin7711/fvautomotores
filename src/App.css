@@ -255,41 +255,21 @@ h1 {
 
 @media (max-width: 768px) {
   .hero-banner {
-    height: auto; /* Permite que el alto se ajuste automáticamente */
+    height: auto;
+    aspect-ratio: 16 / 9; /* O 3/2 si querés más altura */
+    position: relative;
   }
 
   .hero-img {
-    height: auto;
-    max-height: 80vh;
     width: 100%;
-    object-fit: contain; /* Muestra la imagen completa */
+    height: 100%;
+    object-fit: cover;
     object-position: center;
+    filter: brightness(0.6);
   }
 
   .hero-overlay {
-    position: absolute;
-    inset: 0;
     padding: 1.5rem;
-  }
-}
+  } }
 
-@media (max-width: 768px) {
-  .hero-banner {
-    height: auto; /* Permite que el alto se ajuste automáticamente */
-  }
-
-  .hero-img {
-    height: auto;
-    max-height: 80vh;
-    width: 100%;
-    object-fit: contain; /* Muestra la imagen completa */
-    object-position: center;
-  }
-
-  .hero-overlay {
-    position: absolute;
-    inset: 0;
-    padding: 1.5rem;
-  }
-}
 
