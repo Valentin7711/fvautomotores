@@ -164,18 +164,13 @@
 /* ==== RESPONSIVE MOBILE ==== */
 @media (max-width: 768px) {
   .auto-detalle-contenido {
-    display: grid;
-    grid-template-columns: 1fr 1fr; /* 1 sola columna */
+    grid-template-columns: 1fr; 
     padding: 1rem;
     gap: 2rem;
   }
 
   .imagen-principal img {
-    max-height: none;
-    height: auto;
-    width: 100%;
-    border-radius: 12px;
-    object-fit: contain;
+    max-height: 400px;
   }
 
   .miniaturas img {
@@ -200,7 +195,7 @@
   }
 
   .modal-img {
-    max-height: 70%;
+    max-height: 80%;
   }
 
   .cerrar {
