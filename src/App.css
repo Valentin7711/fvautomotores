@@ -252,13 +252,44 @@ h1 {
   }
 }
 
+
 @media (max-width: 768px) {
   .hero-banner {
-    height: 70vh; /* Reduce altura en pantallas chicas */
+    height: auto; /* Permite que el alto se ajuste automáticamente */
   }
 
   .hero-img {
-    height: 100%;
+    height: auto;
+    max-height: 80vh;
+    width: 100%;
+    object-fit: contain; /* Muestra la imagen completa */
     object-position: center;
   }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    padding: 1.5rem;
+  }
 }
+
+@media (max-width: 768px) {
+  .hero-banner {
+    height: auto; /* Permite que el alto se ajuste automáticamente */
+  }
+
+  .hero-img {
+    height: auto;
+    max-height: 80vh;
+    width: 100%;
+    object-fit: contain; /* Muestra la imagen completa */
+    object-position: center;
+  }
+
+  .hero-overlay {
+    position: absolute;
+    inset: 0;
+    padding: 1.5rem;
+  }
+}
+
