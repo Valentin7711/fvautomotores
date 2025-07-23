@@ -95,14 +95,32 @@
   right: 5px;
 }
 
+/* 📱 Responsive ajustes para pantallas pequeñas */
 @media (max-width: 768px) {
-  .scroll-btn {
-    display: none;
-  }
-
   .carousel .auto-card {
     width: 85%;
     margin: 0 auto;
   }
+
+  .scroll-btn {
+    font-size: 1.5rem;
+    width: 32px;
+    height: 32px;
+  }
 }
 
+@media (max-width: 500px) {
+  .scroll-btn.left {
+    left: 10px;
+  }
+
+  .scroll-btn.right {
+    right: 10px;
+  }
+
+  .scroll-btn {
+    font-size: 1.4rem;
+    width: 30px;
+    height: 30px;
+  }
+}
