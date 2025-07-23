@@ -9,7 +9,8 @@ function Filtro({ filtros, setFiltros, marcas, años }) {
     setFiltros({ ...filtros, [name]: value });
   };
 
-  const limpiar = () => {
+  const limpiar = (e) => {
+    e.preventDefault(); // evitar submit o recarga
     setFiltros({ marca: "", año: "", precio: "" });
   };
 
