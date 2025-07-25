@@ -11,20 +11,20 @@ const initialAutos = [
       "/cruze/cruze-1.jpg", "/cruze/cruze-2.jpg", "/cruze/cruze-3.jpg", "/cruze/cruze-4.jpg", "/cruze/cruze-5.jpg", "/cruze/cruze-6.jpg", "/cruze/cruze-7.jpg", "/cruze/cruze-8.jpg", "/cruze/cruze-9.jpg"
       ],
     km: 140000,
-    ficha: "Motor 1.4 turbo Nafta manual, primera mano, 4 gomas nuevas, velocidad crucero, interior de cuero, pantalla, sensores de estacionamiento, camara de retroceso, le funciona todo. Recibo menor."
+    ficha: "Motor 1.4 turbo Nafta manual. Primera mano. 4 gomas nuevas. Velocidad crucero. Interior de cuero. Pantalla. Sensores de estacionamiento. Camara de retroceso. Le funciona todo. Papeles al dia listo para transferir."
   },
   {
     id: 2,
     marca: "Fiat",
     modelo: "500 Gucci",
-    año: 2020,
-    precio: 35000,
+    año: 2011,
+    precio: 20000,
     imagen: [
       "/gucci/gucci-1.jpg", "/gucci/gucci-2.jpg", "/gucci/gucci-3.jpg", "/gucci/gucci-4.jpg", "/gucci/gucci-5.jpg", "/gucci/gucci-6.jpg"
 
     ],
-    km: 120000,
-    ficha: "Motor 1.4 Nafta manual"
+    km: 40000,
+    ficha: "Motor 1.4 Nafta. Version Gucci unico en el pais. Interior e exterior en perfectas condiciones. Precio en usd"
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const initialAutos = [
       "/scirocco/scirocco-1.jpg", "/scirocco/scirocco-2.jpg", "/scirocco/scirocco-3.jpg", "/scirocco/scirocco-4.jpg"
     ],
       km: 68000,
-    ficha: "Motor 1.4T DSG con muchos accesorios. 4 cubiertas con 20.000 km. Bateria Moura colocada hace un año. Tratamiento vidrio liquido en todo el auto."
+    ficha: "Motor 1.4T DSG con muchos accesorios. 4 cubiertas con 20.000 km. Bateria Moura colocada hace un año. Tratamiento vidrio liquido en todo el auto. Precio en usd"
   },
   {
     id: 4,
@@ -60,19 +60,19 @@ const initialAutos = [
       "/toro/toro-1.jpg", "/toro/toro-2.jpg", "/toro/toro-3.jpg", "/toro/toro-4.jpg", "/toro/toro-5.jpg", "/toro/toro-6.jpg"
     ],
     km: 120000,
-    ficha: "Consultar informacion..."
+    ficha: "Version Freedom 4x4 automatica. Distribucion echa. Service completo recien echo. Papeles al dia lista para transferir."
   },
   {
     id: 6,
     marca: "Yamaha",
     modelo: "R1",
     año: 2017,
-    precio: 33500,
+    precio: 35000,
     imagen: [
       "/r1/r1-1.jpg", "/r1/r1-2.jpg", "/r1/r1-3.jpg", "/r1/r1-4.jpg", "/r1/r1-5.jpg"
     ],
     km: 19000,
-    ficha: "Service recien realizado. Papeles al dia y lista para transferir."
+    ficha: "Service recien realizado. Sin ningun detalle. Papeles al dia y lista para transferir. Precio en usd."
   },
   {
     id: 7,
@@ -96,7 +96,7 @@ const initialAutos = [
       "/308/308-1.jpg", "/308/308-2.jpg", "/308/308-3.jpg", "/308/308-4.jpg", "/308/308-5.jpg", "/308/308-6.jpg"
     ],
     km: 169000,
-    ficha: "Consultar informacion..."
+    ficha: "Version Allure Nav 1.6 Hdi. Service recien realizado."
   },
   {
     id: 9,
@@ -192,7 +192,7 @@ const initialAutos = [
       "/zx10/zx10-1.jpg", "/zx10/zx10-2.jpg", "/zx10/zx10-3.jpg", "/zx10/zx10-4.jpg", "/zx10/zx10-5.jpg", "/zx10/zx10-6.jpg"
     ],
     km: 120000,
-    ficha: "Impecable. Service recien echo. Papeles al dia lista para transferir."
+    ficha: "Impecable. Service recien echo. Papeles al dia lista para transferir. Precio en usd."
   },
      {
     id: 17,
@@ -235,12 +235,12 @@ const initialAutos = [
     marca: "BMW",
     modelo: "S1000RR",
     año: 2024,
-    precio: 53000000,
+    precio: 53000,
     imagen: [
       "/bmw/bmw-1.jpg", "/bmw/bmw-2.jpg", "/bmw/bmw-3.jpg", "/bmw/bmw-4.jpg", "/bmw/bmw-5.jpg"
     ],
     km: 6000,
-    ficha: "Patentada en el 2025. Service recien echo. Cuenta con muchos accesorios. Papeles al dia lista para transferir."
+    ficha: "Patentada en el 2025. Service recien echo. Cuenta con muchos accesorios. Papeles al dia lista para transferir. Precio en usd."
   },
      {
     id: 21,
@@ -259,7 +259,7 @@ const initialAutos = [
     marca: "Toyota",
     modelo: "Etios",
     año: 2017,
-    precio: 0,
+    precio: 17500000,
     imagen: [
       "/etios/etios-1.jpg", "/etios/etios-2.jpg", "/etios/etios-3.jpg", "/etios/etios-4.jpg", "/etios/etios-5.jpg"
     ],
@@ -277,6 +277,30 @@ const initialAutos = [
     ],
     km: 0,
     ficha: "GNC. Cubiertas nuevas. Controles de fabrica. Manuales."
+  },
+      {
+    id: 24,
+    marca: "Toyota",
+    modelo: "Corolla",
+    año: 2017,
+    precio: 23500000,
+    imagen: [
+      "/corolla/corolla-1.jpg", "/corolla/corolla-2.jpg", "/corolla/corolla-3.jpg", "/corolla/corolla-4.jpg", "/corolla/corolla-5.jpg", "/corolla/corolla-6.jpg"
+    ],
+    km: 120000,
+    ficha: "Version XLI Full. Motor y caja impecables. Toda su documnetacion al dia listo para transferir."
+  },
+       {
+    id: 25,
+    marca: "Ford",
+    modelo: "Ranger",
+    año: 2017,
+    precio: 34000000,
+    imagen: [
+      "/ranger/ranger-1.jpg", "/ranger/ranger-2.jpg", "/ranger/ranger-3.jpg", "/ranger/ranger-4.jpg", "/ranger/ranger-5.jpg", "/ranger/ranger-6.jpg", "/ranger/ranger-7.jpg", "/ranger/ranger-8.jpg", "/ranger/ranger-9.jpg", "/ranger/ranger-10.jpg"
+    ],
+    km: 185000,
+    ficha: "Version XLT Manual 3.2 Diesel. Cuenta con muchos accesorios. Papeles al dia lista para transferir."
   },
 ];
 
