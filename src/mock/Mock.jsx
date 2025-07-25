@@ -30,25 +30,25 @@ const initialAutos = [
     id: 3,
     marca: "Volkswagen",
     modelo: "Scirocco",
-    año: 2022,
-    precio: 45000,
+    año: 2013,
+    precio: 24500,
     imagen: [
       "/scirocco/scirocco-1.jpg", "/scirocco/scirocco-2.jpg", "/scirocco/scirocco-3.jpg", "/scirocco/scirocco-4.jpg"
     ],
-      km: 120000,
-    ficha: "Motor 1.8, primera mano, servis echo, distribucion echa"
+      km: 68000,
+    ficha: "Motor 1.4T DSG con muchos accesorios. 4 cubiertas con 20.000 km. Bateria Moura colocada hace un año. Tratamiento vidrio liquido en todo el auto."
   },
   {
     id: 4,
     marca: "Toyota",
     modelo: "Rav-4",
-    año: 2019,
-    precio: 28000,
+    año: 2020,
+    precio: 55000000,
     imagen: [
       "/toyota/toyota-1.jpg", "/toyota/toyota-2.jpg", "/toyota/toyota-3.jpg", "/toyota/toyota-4.jpg", "/toyota/toyota-5.jpg", "/toyota/toyota-6.jpg"
     ],
-    km: 120000,
-    ficha: "Motor 1.8, primera mano, servis echo, distribucion echa"
+    km: 111000,
+    ficha: "Rav-4 Limited Hibrida 4x4. Motor hibrido. Version full. Mecanica perfecta e interior. Papeles al dia lista para transferir."
   },
   {
     id: 5,
@@ -66,25 +66,25 @@ const initialAutos = [
     id: 6,
     marca: "Yamaha",
     modelo: "R1",
-    año: 2019,
-    precio: 28000,
+    año: 2017,
+    precio: 33500,
     imagen: [
-      "/r1/r1-1.jpg", "/r1/r1-2.jpg", "/r1/r1-3.jpg", "/r1/r1-4.jpg", "/r1/r1-5.jpg", "/r1/r1-6.jpg"
+      "/r1/r1-1.jpg", "/r1/r1-2.jpg", "/r1/r1-3.jpg", "/r1/r1-4.jpg", "/r1/r1-5.jpg"
     ],
-    km: 120000,
-    ficha: "Motor 1.8, primera mano, servis echo, distribucion echa"
+    km: 19000,
+    ficha: "Service recien realizado. Papeles al dia y lista para transferir."
   },
   {
     id: 7,
     marca: "Jeep",
-    modelo: "Jeep",
-    año: 2019,
-    precio: 28000,
+    modelo: "Renegade Sport",
+    año: 2024,
+    precio: 33500000,
     imagen: [
-      "/jeep/jeep-1.jpg", "/jeep/jeep-2,jpg", "/jeep/jeep-3.jpg", "/jeep/jeep-4.jpg", "/jeep/jeep-5.jpg", "/jeep/jeep-6.jpg", "/jeep/jeep-7.jpg", "/jeep/jeep-8.jpg", "/jeep/jeep-9.jpg"
+      "/jeep/jeep-1.jpg", "/jeep/jeep-2.jpg", "/jeep/jeep-3.jpg", "/jeep/jeep-4.jpg", "/jeep/jeep-5.jpg", "/jeep/jeep-6.jpg", "/jeep/jeep-7.jpg", "/jeep/jeep-8.jpg", "/jeep/jeep-9.jpg"
     ],
-    km: 120000,
-    ficha: "Motor 1.8, primera mano, servis echo, distribucion echa"
+    km: 0,
+    ficha: "Version Sport, motor 1.8 Nafta, papeles al dia y lista para transferir, garantia oficial de fabrica, manuales y doble llave."
   },
   {
     id: 8,
@@ -113,14 +113,14 @@ const initialAutos = [
   {
     id: 10,
     marca: "Honda",
-    modelo: "Twister 300",
-    año: 2019,
-    precio: 28000,
+    modelo: "Twister CB300",
+    año: 2023,
+    precio: 7200000,
     imagen: [
       "/300/twister-1.jpg", "/300/twister-2.jpg", "/300/twister-3.jpg", "/300/twister-4.jpg"
     ],
-    km: 120000,
-    ficha: "Motor 1.8, primera mano, servis echo, distribucion echa"
+    km: 10000,
+    ficha: "Impecable nada por hacerle. Service recien echo. Papeles al dia lista para transferir."
   },
     {
     id: 11,
@@ -139,12 +139,12 @@ const initialAutos = [
     marca: "Volkswagen",
     modelo: "Gol Trend",
     año: 2019,
-    precio: 28000,
+    precio: 17500000,
     imagen: [
       "/golTrend/gol-1.jpg", "/golTrend/gol-2.jpg", "/golTrend/gol-3.jpg", "/golTrend/gol-4.jpg", "/golTrend/gol-5.jpg", "/golTrend/gol-6.jpg", "/golTrend/gol-7.jpg"
     ],
-    km: 120000,
-    ficha: "Motor 1.8, primera mano, servis echo, distribucion echa"
+    km: 86000,
+    ficha: "Nafta y Gnc de quinta, nada por hacerle, 2 cubiertas nuevas, papeles al dia listo para transferir."
   },
     {
     id: 13,
@@ -162,13 +162,13 @@ const initialAutos = [
     id: 14,
     marca: "Fiat",
     modelo: "Siena",
-    año: 2019,
-    precio: 28000,
+    año: 2016,
+    precio: 12000000,
     imagen: [
       "/siena/siena-1.jpg", "/siena/siena-2.jpg", "/siena/siena-3.jpg", "/siena/siena-4.jpg"
     ],
-    km: 120000,
-    ficha: "Motor 1.8, primera mano, servis echo, distribucion echa"
+    km: 128000,
+    ficha: "Motor 1.4 Nafta y Gnc de quinta. Mantenimientos al dia. Papeles al dia listo para transferir."
   },
     {
     id: 15,
@@ -198,13 +198,49 @@ const initialAutos = [
     id: 17,
     marca: "Volkswagen",
     modelo: "Suran",
-    año: 2019,
-    precio: 28000,
+    año: 2018,
+    precio: 17900000,
     imagen: [
       "/suran/suran-1.jpg", "/suran/suran-2.jpg", "/suran/suran-3.jpg", "/suran/suran-4.jpg", "/suran/suran-5.jpg"
     ],
-    km: 120000,
-    ficha: "Motor 1.8, primera mano, servis echo, distribucion echa"
+    km: 100000,
+    ficha: "Suran Comfortline, motor y mecanica perfectos, interior como 0km, titular, papeles al dia lista para ser transferida. Ideal para familia o laburo, super comoda y economica."
+  },
+     {
+    id: 18,
+    marca: "Volkswagen",
+    modelo: "Up",
+    año: 2016,
+    precio: 14000000,
+    imagen: [
+      "/up/up-1.jpg", "/up/up-2.jpg", "/up/up-3.jpg", "/up/up-4.jpg", "/up/up-5.jpg", "/up/up-6.jpg", "/up/up-7.jpg"
+    ],
+    km: 90000,
+    ficha: "Impecable muy bien cuidado. Motor excelente economico. Papeles al dia listo para transferir."
+  },
+     {
+    id: 19,
+    marca: "Peugeot",
+    modelo: "307",
+    año: 2007,
+    precio: 9000000,
+    imagen: [
+      "/307/307-1.jpg", "/307/307-2.jpg", "/307/307-3.jpg", "/307/307-4.jpg", "/307/307-5.jpg", "/307/307-6.jpg", "/307/307-7.jpg", "/307/307-8.jpg"
+    ],
+    km: 160000,
+    ficha: "Impecable muy bien cuidado. Motor excelente economico. Papeles al dia listo para transferir."
+  },
+     {
+    id: 20,
+    marca: "BMW",
+    modelo: "S1000RR",
+    año: 2024,
+    precio: 53000000,
+    imagen: [
+      "/bmw/bmw-1.jpg", "/bmw/bmw-2.jpg", "/bmw/bmw-3.jpg", "/bmw/bmw-4.jpg", "/bmw/bmw-5.jpg"
+    ],
+    km: 6000,
+    ficha: "Patentada en el 2025. Service recien echo. Cuenta con muchos accesorios. Papeles al dia lista para transferir."
   },
 ];
 
