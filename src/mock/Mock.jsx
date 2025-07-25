@@ -271,11 +271,11 @@ const initialAutos = [
     marca: "Chevrolet",
     modelo: "Meriva",
     año: 2009,
-    precio: 0,
+    precio: 9000000,
     imagen: [
       "/meriva/meriva-1.jpg", "/meriva/meriva-2.jpg"
     ],
-    km: 9000000,
+    km: 0,
     ficha: "GNC. Cubiertas nuevas. Controles de fabrica. Manuales."
   },
 ];
