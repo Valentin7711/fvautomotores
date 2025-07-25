@@ -54,13 +54,13 @@ const initialAutos = [
     id: 5,
     marca: "Fiat",
     modelo: "Toro",
-    año: 2019,
-    precio: 28000,
+    año: 2018,
+    precio: 25000000,
     imagen: [
       "/toro/toro-1.jpg", "/toro/toro-2.jpg", "/toro/toro-3.jpg", "/toro/toro-4.jpg", "/toro/toro-5.jpg", "/toro/toro-6.jpg"
     ],
     km: 120000,
-    ficha: "Motor 1.8, primera mano, servis echo, distribucion echa"
+    ficha: "Consultar informacion..."
   },
   {
     id: 6,
@@ -90,25 +90,25 @@ const initialAutos = [
     id: 8,
     marca: "Peugeot",
     modelo: "308",
-    año: 2019,
-    precio: 28000,
+    año: 2012,
+    precio: 0,
     imagen: [
       "/308/308-1.jpg", "/308/308-2.jpg", "/308/308-3.jpg", "/308/308-4.jpg", "/308/308-5.jpg", "/308/308-6.jpg"
     ],
-    km: 120000,
-    ficha: "Motor 1.8, primera mano, servis echo, distribucion echa"
+    km: 169000,
+    ficha: "Consultar informacion..."
   },
   {
     id: 9,
     marca: "Peugeot",
     modelo: "207",
-    año: 2019,
-    precio: 28000,
+    año: 2014,
+    precio: 13000000,
     imagen: [
       "/207/207-1.jpg","/207/207-2.jpg", "/207/207-3.jpg", "/207/207-4.jpg", "/207/207-5.jpg", "/207/207-6.jpg", "/207/207-7.jpg"
     ],
-    km: 120000,
-    ficha: "Motor 1.8, primera mano, servis echo, distribucion echa"
+    km: 140000,
+    ficha: "Version Active aire y direccion y Gnc. Alarma y cierre centralizado. Cubiertas nuevas."
   },
   {
     id: 10,
@@ -126,13 +126,13 @@ const initialAutos = [
     id: 11,
     marca: "Volkswagen",
     modelo: "Amarok",
-    año: 2019,
-    precio: 28000,
+    año: 2017,
+    precio: 28000000,
     imagen: [
       "/amarok/amarok-1.jpg", "/amarok/amarok-2.jpg", "/amarok/amarok-3.jpg", "/amarok/amarok-4.jpg", "/amarok/amarok-5.jpg", "/amarok/amarok-6.jpg", "/amarok/amarok-7.jpg", "/amarok/amarok-8.jpg", "/amarok/amarok-9.jpg"
     ],
-    km: 120000,
-    ficha: "Motor 1.8, primera mano, servis echo, distribucion echa"
+    km: 140000,
+    ficha: "Consultar informacion..."
   },
     {
     id: 12,
@@ -174,25 +174,25 @@ const initialAutos = [
     id: 15,
     marca: "Volkswagen",
     modelo: "Amarok V6",
-    año: 2019,
-    precio: 28000,
+    año: 2023,
+    precio: 48000000,
     imagen: [
       "/v6/v6-1.jpg", "/v6/v6-2.jpg", "/v6/v6-3.jpg", "/v6/v6-4.jpg", "/v6/v6-5.jpg", "/v6/v6-6.jpg", "/v6/v6-7.jpg"
     ],
-    km: 120000,
-    ficha: "Motor 1.8, primera mano, servis echo, distribucion echa"
+    km: 76000,
+    ficha: "Consultar informacion..."
   },
     {
     id: 16,
     marca: "Kawasaki",
     modelo: "ZX10",
-    año: 2019,
-    precio: 28000,
+    año: 2011,
+    precio: 22000,
     imagen: [
       "/zx10/zx10-1.jpg", "/zx10/zx10-2.jpg", "/zx10/zx10-3.jpg", "/zx10/zx10-4.jpg", "/zx10/zx10-5.jpg", "/zx10/zx10-6.jpg"
     ],
     km: 120000,
-    ficha: "Motor 1.8, primera mano, servis echo, distribucion echa"
+    ficha: "Impecable. Service recien echo. Papeles al dia lista para transferir."
   },
      {
     id: 17,
@@ -241,6 +241,42 @@ const initialAutos = [
     ],
     km: 6000,
     ficha: "Patentada en el 2025. Service recien echo. Cuenta con muchos accesorios. Papeles al dia lista para transferir."
+  },
+     {
+    id: 21,
+    marca: "Peugeot",
+    modelo: "307",
+    año: 2009,
+    precio: 11000000,
+    imagen: [
+      "/307-2/307-1.jpg", "/307-2/307-2.jpg", "/307-2/307-3.jpg", "/307-2/307-4.jpg", "/307-2/307-5.jpg"
+    ],
+    km: 190000,
+    ficha: "Version XS 1.6 Nafta. Impecable."
+  },
+      {
+    id: 22,
+    marca: "Toyota",
+    modelo: "Etios",
+    año: 2017,
+    precio: 0,
+    imagen: [
+      "/etios/etios-1.jpg", "/etios/etios-2.jpg", "/etios/etios-3.jpg", "/etios/etios-4.jpg", "/etios/etios-5.jpg"
+    ],
+    km: 90000,
+    ficha: "Version XLS 1.5 con Gnc."
+  },
+      {
+    id: 23,
+    marca: "Chevrolet",
+    modelo: "Meriva",
+    año: 2009,
+    precio: 0,
+    imagen: [
+      "/meriva/meriva-1.jpg", "/meriva/meriva-2.jpg"
+    ],
+    km: 9000000,
+    ficha: "GNC. Cubiertas nuevas. Controles de fabrica. Manuales."
   },
 ];
 
