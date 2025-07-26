@@ -288,7 +288,7 @@ const initialAutos = [
       "/corolla/corolla-1.jpg", "/corolla/corolla-2.jpg", "/corolla/corolla-3.jpg", "/corolla/corolla-4.jpg", "/corolla/corolla-5.jpg", "/corolla/corolla-6.jpg"
     ],
     km: 120000,
-    ficha: "Version XLI Full. Motor y caja impecables. Toda su documnetacion al dia listo para transferir."
+    ficha: "Version XLI Full. Motor y caja impecables. Toda su documentacion al dia listo para transferir."
   },
        {
     id: 25,
@@ -301,6 +301,28 @@ const initialAutos = [
     ],
     km: 185000,
     ficha: "Version XLT Manual 3.2 Diesel. Cuenta con muchos accesorios. Papeles al dia lista para transferir."
+  },
+     {id: 26,
+    marca: "Ford",
+    modelo: "Eco Sport",
+    año: 2022,
+    precio: 25000000,
+    imagen: [
+      "/eco/eco-1.jpg", "/eco/eco-2.jpg", "/eco/eco-3.jpg", "/eco/eco-4.jpg", "/eco/eco-5.jpg"
+    ],
+    km: 31000,
+    ficha: "Version SE 1.5 Nafta. Primera mano. Llantas 16. Camara de retroceso. Sensores de estacionamiento. Papeles al dia lista para transferir."
+  },
+     {id: 27,
+    marca: "BMW",
+    modelo: "S1000RR",
+    año: 2017,
+    precio: 35000,
+    imagen: [
+      "/bmw-2/bmw-1.jpg", "/bmw-2/bmw-2.jpg", "/bmw-2/bmw-3.jpg", "/bmw-2/bmw-4.jpg", "/bmw-2/bmw-5.jpg", "/bmw-2/bmw-6.jpg"
+    ],
+    km: 30000,
+    ficha: "Service recien echo. Papeles al dia listo para transferir."
   },
 ];
 
