@@ -9,6 +9,7 @@ function AutoInfo({ auto }) {
       <p>Precio: ${auto.precio.toLocaleString()}</p>
       <p>Kilometros: {auto.km}</p>
       <p>Ficha Tecnica: "{auto.ficha}"</p>
+      <p>Recibimos tu vehículo usado como parte de pago y Financiamos con Banco Santander Rio.</p>
       <a
         href={`https://wa.me/3515305744?text=Hola! Estoy interesado en el ${auto.marca} ${auto.modelo} del año ${auto.año}. ¿Está disponible?`}
         target="_blank"

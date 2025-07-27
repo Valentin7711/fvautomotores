@@ -24,7 +24,7 @@ const initialAutos = [
 
     ],
     km: 40000,
-    ficha: "Motor 1.4 Nafta. Version Gucci unico en el pais. Interior e exterior en perfectas condiciones. Precio en usd"
+    ficha: "Motor 1.4 Nafta. Version Gucci unico en el pais. Interior e exterior en perfectas condiciones. Precio en usd."
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const initialAutos = [
       "/scirocco/scirocco-1.jpg", "/scirocco/scirocco-2.jpg", "/scirocco/scirocco-3.jpg", "/scirocco/scirocco-4.jpg"
     ],
       km: 68000,
-    ficha: "Motor 1.4T DSG con muchos accesorios. 4 cubiertas con 20.000 km. Bateria Moura colocada hace un año. Tratamiento vidrio liquido en todo el auto. Precio en usd"
+    ficha: "Motor 1.4T DSG con muchos accesorios. 4 cubiertas con 20.000 km. Bateria Moura colocada hace un año. Tratamiento vidrio liquido en todo el auto. Precio en usd."
   },
   {
     id: 4,
