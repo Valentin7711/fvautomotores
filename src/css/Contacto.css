@@ -111,14 +111,32 @@
 
 .contacto-img {
   margin-top: 2.5rem;
+  max-width: 600px;       
+  margin-left: auto;      
+  margin-right: auto;
+  overflow: hidden;   
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .contacto-img img {
   width: 100%;
-  max-width: 1000px;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
-  box-sizing: border-box;
+  height: auto;
+  display: block;
+  border-radius: inherit;
+  object-fit: cover;
+  filter: drop-shadow(0 0 5px rgba(0,0,0,0.15));
+  transition: transform 0.4s ease;
+}
+
+.contacto-img:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+  transform: scale(1.03);
+}
+
+.contacto-img:hover img {
+  transform: scale(1.05);
 }
 
 @media (max-width: 600px) {
