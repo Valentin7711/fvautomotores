@@ -53,6 +53,7 @@ function Footer() {
         &copy; {new Date().getFullYear()} FV Automotores. Todos los derechos
         reservados.
       </p>
+      <p>Desarollada por Valentin Bauducco.</p>
     </footer>
   );
 }
