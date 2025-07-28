@@ -28,7 +28,7 @@ function Footer() {
 
         <div className="footer-social" aria-label="Redes sociales">
           <a
-            href="https://wa.me/3512044080"
+            href="https://wa.me/+5493512044080"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"

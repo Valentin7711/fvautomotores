@@ -8,13 +8,13 @@ function Contacto() {
   const contactos = [
     {
       nombre: "Ariel Bauducco",
-      telefono: "3512044080",
-      whatsapp: "3512044080",
+      telefono: "+5493512044080",
+      whatsapp: "+5493512044080",
     },
     {
       nombre: "Yonatan Bauducco",
-      telefono: "3515305744",
-      whatsapp: "3515305744",
+      telefono: "+5493515305744",
+      whatsapp: "+5493515305744",
     },
   ];
 
@@ -30,11 +30,11 @@ function Contacto() {
             <li>📞 Teléfono: <a href={`tel:+54${telefono}`}>{telefono}</a></li>
           </ul>
           <div className="contacto-botones">
-            <a href={`tel:+54${telefono}`} className="contacto-btn">
+            <a href={`tel:${telefono}`} className="contacto-btn">
               <i className="fas fa-phone"></i> Llamar
             </a>
             <a
-              href={`https://wa.me/54${whatsapp}`}
+              href={`https://wa.me/${whatsapp}`}
               target="_blank"
               rel="noopener noreferrer"
               className="contacto-btn"
