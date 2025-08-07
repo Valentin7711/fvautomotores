@@ -324,6 +324,17 @@ const initialAutos = [
     km: 30000,
     ficha: "Service recien echo. Papeles al dia listo para transferir."
   },
+     {id: 28,
+    marca: "Nisan",
+    modelo: "March Vicia",
+    año: 2013,
+    precio: 11000000,
+    imagen: [
+      "/nisan/nisan-1.jpg", "/nisan/nisan-2.jpg", "/nisan/nisan-3.jpg", "/nisan/nisan-4.jpg", "/nisan/nisan-5.jpg", "/nisan/nisan-6.jpg", "/nisan/nisan-7.jpg", "/nisan/nisan-8.jpg", "/nisan/nisan-9.jpg"
+    ],
+    km: 112000,
+    ficha: "Consultar informacion..."
+  },
 ];
 
 export function useAutos() {
